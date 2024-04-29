@@ -15,10 +15,14 @@
 includes:
 - ../common/engines.yml
 - ../common/apps.yml
+- ../common/settings/tk-multi-workfiles2.yml
 - apps.yml
 
 maya.asset_step:
   apps:
+
+    tk-multi-workfiles2: '@common.settings.tk-multi-workfiles2.maya.asset_step'
+
     tk-multi-about: '@common.apps.tk-multi-about'
 
     tk-multi-publish2: '@maya.apps.tk-multi-publish2'
@@ -30,7 +34,9 @@ maya.asset_step:
     tk-multi-reviewsubmission: '@maya.apps.tk-multi-reviewsubmission'
 
   location: "@common.engines.tk-maya.location"
-  menu_favourites: []
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  - {app_instance: tk-multi-workfiles2, name: File Save...}
   run_at_startup:
   - {app_instance: tk-multi-shotgunpanel, name: ''}
   launch_builtin_plugins: [basic]
