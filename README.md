@@ -2,8 +2,3 @@
 
 ### Toolkit zero configuration setup
 
-For documentation, please see the [github wiki](https://github.com/shotgunsoftware/tk-config-basic/wiki/Documentation).
-=======
-# sun
-shotgrid Entitiy Schame to file save from maya, nuke
-
